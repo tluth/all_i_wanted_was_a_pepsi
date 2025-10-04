@@ -8,7 +8,13 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "pillow~10.0.0"
+    "pillow>=10.0.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "uv"
 ]
 
 [tool.pytest.ini_options]
